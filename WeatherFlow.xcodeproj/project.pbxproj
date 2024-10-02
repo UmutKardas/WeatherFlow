@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A28DA6F2CADB66700D6ADFD /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8A28DA6E2CADB66700D6ADFD /* SDWebImageSwiftUI */; };
+		8A469E2A2CADE58F0016DB3B /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 8A469E292CADE58F0016DB3B /* ActivityIndicatorView */; };
 		8ACC3CD52CAB4411002241C7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8ACC3CD42CAB4411002241C7 /* Alamofire */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A28DA6F2CADB66700D6ADFD /* SDWebImageSwiftUI in Frameworks */,
+				8A469E2A2CADE58F0016DB3B /* ActivityIndicatorView in Frameworks */,
 				8ACC3CD52CAB4411002241C7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +76,7 @@
 			packageProductDependencies = (
 				8ACC3CD42CAB4411002241C7 /* Alamofire */,
 				8A28DA6E2CADB66700D6ADFD /* SDWebImageSwiftUI */,
+				8A469E292CADE58F0016DB3B /* ActivityIndicatorView */,
 			);
 			productName = WeatherFlow;
 			productReference = 8ACC3CC22CAB4348002241C7 /* WeatherFlow.app */;
@@ -106,6 +109,7 @@
 			packageReferences = (
 				8ACC3CD32CAB4411002241C7 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				8A28DA6D2CADB66700D6ADFD /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				8A469E282CADE58E0016DB3B /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8ACC3CC32CAB4348002241C7 /* Products */;
@@ -345,6 +349,14 @@
 				minimumVersion = 3.1.2;
 			};
 		};
+		8A469E282CADE58E0016DB3B /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
 		8ACC3CD32CAB4411002241C7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -360,6 +372,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8A28DA6D2CADB66700D6ADFD /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		8A469E292CADE58F0016DB3B /* ActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A469E282CADE58E0016DB3B /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
 		};
 		8ACC3CD42CAB4411002241C7 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

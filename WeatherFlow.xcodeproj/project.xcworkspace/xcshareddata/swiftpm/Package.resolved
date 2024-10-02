@@ -1,6 +1,15 @@
 {
-  "originHash" : "6b473fe37abe641b0bd5acb678410dafc801847ea17438e7789509065a244dbf",
+  "originHash" : "7d46c55a1b1c52cb1b8b471df02e1f373cef99fb179721593c5ca1c0d4f40ae8",
   "pins" : [
+    {
+      "identity" : "activityindicatorview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/exyte/ActivityIndicatorView.git",
+      "state" : {
+        "revision" : "9970fd0bb7a05dad0b6566ae1f56937716686b24",
+        "version" : "1.1.1"
+      }
+    },
     {
       "identity" : "alamofire",
       "kind" : "remoteSourceControl",
