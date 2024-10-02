@@ -12,12 +12,18 @@ final class HomeViewModel: ObservableObject {
         fetchWeather()
     }
 
-    @Published var weather: Weather?
+    @Published var weather: Weather? {
+        didSet {
+            timeOfDay = getTimeOfDay(using: weather)
+        }
+    }
+
+    @Published var timeOfDay: TimeOfDay = .Morning
 
     private let weatherService: IWeatherService
 
     private func fetchWeather() {
-        weatherService.fetchWeather(path: ApiPath.weatherByCity(city: "istanbul", language: "TR")) { [weak self] result in
+        weatherService.fetchWeather(path: ApiPath.weatherByCity(city: "Sydney", language: "EN")) { [weak self] result in
             switch result {
             case .success(let weather):
                 DispatchQueue.main.async {
@@ -27,5 +33,25 @@ final class HomeViewModel: ObservableObject {
                 print("Failed to fetch weather: \(error.localizedDescription)")
             }
         }
+    }
+
+    private func getTimeOfDay(using weather: Weather?) -> TimeOfDay {
+        let date = Date(timeIntervalSince1970: TimeInterval(weather?.dt ?? 0))
+
+        guard let timezoneOffset = weather?.timezone,
+              let timeZone = TimeZone(secondsFromGMT: timezoneOffset)
+        else {
+            return .Night
+        }
+
+        let calendar = Calendar.current
+        let dateComponents = calendar.dateComponents(in: timeZone, from: date)
+        let hour = dateComponents.hour ?? 0
+
+        return (hour >= 5 && hour < 22) ? .Morning : .Night
+    }
+
+    func fahrenheitToCelsius(fahrenheit: Double) -> Double {
+        return (fahrenheit - 32) * (5.0 / 9.0)
     }
 }
