@@ -14,20 +14,18 @@ WeatherFlow is an application developed to display current weather conditions an
 
 - Displays current weather conditions and forecasts.
 - Loading screen for improved user experience.
-- Support for both dark mode and light mode.
 
 ## Screenshots
 
 | New York | Sydney | Paris | Trabzon |
 |----------|--------|-------|---------|
-| ![newyork](https://github.com/user-attachments/assets/2d78d85f-24a4-4c49-bb14-36b46cd40295) | ![Sydney](https://github.com/user-attachments/assets/1490df69-585d-4d06-b197-56d5b99564e1) | ![paris](https://github.com/user-attachments/assets/b8f08804-a5c6-4108-b978-660cb8fb7bce) | ![trabzon](https://github.com/user-attachments/assets/7154e8b8-2234-4cea-8d44-7225f6598493) |
+| <img src="https://github.com/user-attachments/assets/2d78d85f-24a4-4c49-bb14-36b46cd40295" width="300" alt="newyork" /> | <img src="https://github.com/user-attachments/assets/1490df69-585d-4d06-b197-56d5b99564e1" width="300" alt="sydney" /> | <img src="https://github.com/user-attachments/assets/b8f08804-a5c6-4108-b978-660cb8fb7bce" width="300" alt="paris" /> | <img src="https://github.com/user-attachments/assets/7154e8b8-2234-4cea-8d44-7225f6598493" width="300" alt="trabzon" /> |
 
 ### Loading Screen
 
 | Loading Screen |
 |----------------|
-| ![loading](https://github.com/user-attachments/assets/cec0680f-ffb6-4e7c-9ab7-1abda9d94dc5) |
-
+| <img src="https://github.com/user-attachments/assets/cec0680f-ffb6-4e7c-9ab7-1abda9d94dc5" width="300" alt="loading" /> |
 
 ## Installation
 
