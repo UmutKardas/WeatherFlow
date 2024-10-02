@@ -24,7 +24,10 @@ WeatherFlow is an application developed to display current weather conditions an
 
 ### Loading Screen
 
-![loading](https://github.com/user-attachments/assets/cec0680f-ffb6-4e7c-9ab7-1abda9d94dc5)
+| Loading Screen |
+|----------------|
+| ![loading](https://github.com/user-attachments/assets/cec0680f-ffb6-4e7c-9ab7-1abda9d94dc5) |
+
 
 ## Installation
 
